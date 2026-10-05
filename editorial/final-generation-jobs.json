@@ -1,0 +1,97 @@
+[
+  {
+    "id": "17-gongbi",
+    "style": "工笔淡彩",
+    "prompt": "Use case: illustration-story. One independent vertical illustration for a beginner art book, no text no watermark no panels. Scene fixed for a comparison: one small brown-and-white sparrow perched on an upper-left slender branch of peach blossoms; open pale background; a few pink flowers and green leaves; bird looking toward the lower right. Style: finely controlled Chinese gongbi bird-and-flower painting on pale silk, very thin precise contour lines defining feathers, leaves, petals and branch; meticulous layered light mineral colors, naturalistic carefully articulated bird, transparent delicate gradations within bounded shapes, restrained elegant negative space. Do not make loose splashes or rough brush marks."
+  },
+  {
+    "id": "18-xieyi",
+    "style": "写意花鸟",
+    "prompt": "Use case: illustration-story. One independent vertical illustration for a beginner art book, no text no watermark no panels. Scene fixed for a comparison: one small brown-and-white sparrow perched on an upper-left slender branch of peach blossoms; open pale background; a few pink flowers and green leaves; bird looking toward the lower right. Style: Chinese expressive xieyi ink bird-and-flower painting on xuan paper, brisk calligraphic black branch, bird suggested with a few decisive soft ink masses and dry-brush strokes rather than enumerated feathers, pink blossom dots with lively ink wash, varied edges and generous white negative space. Deliberately economical marks, not detailed realistic painted bird."
+  },
+  {
+    "id": "19-impressionism",
+    "style": "印象主义启发",
+    "prompt": "Use case: illustration-story. One independent vertical illustration for a beginner art book, no text no watermark no panels. Same composition for a comparison: a sunny modest street corner, a pale cream cafe facade with dark blue awning at right, one green plane tree at left, three small distant pedestrians in casual clothes, wet pavement reflecting warm light, quiet morning. Natural unified perspective, no readable lettering. Style: impressionist plein-air painting focusing on fleeting light and colored shadows. Short broken brushstrokes, softly merging edges, luminous lilac shadows, warm yellow cream light, sky reflections as small cool dabs on pavement. Avoid outline contours and opaque graphic simplification. Buildings readable but details dissolve into luminous brushwork."
+  },
+  {
+    "id": "20-pointillism",
+    "style": "点彩",
+    "prompt": "Use case: illustration-story. One independent vertical illustration for a beginner art book, no text no watermark no panels. Same composition for a comparison: a sunny modest street corner, a pale cream cafe facade with dark blue awning at right, one green plane tree at left, three small distant pedestrians in casual clothes, wet pavement reflecting warm light, quiet morning. Natural unified perspective, no readable lettering. Style: disciplined pointillist painting: the entire image, objects and sky alike, built exclusively from many visible small separate pigment dots or small dabs, warm and cool pure colored marks juxtaposed to optically build larger tonal regions, no drawn contour lines, no broad smooth brush areas, no uniform digital pixel squares. At viewing distance street reads, close up dot construction is clear."
+  },
+  {
+    "id": "21-fauvism",
+    "style": "野兽派启发",
+    "prompt": "Use case: illustration-story. One independent vertical illustration for a beginner art book, no text no watermark no panels. Same composition for a comparison: a sunny modest street corner, a pale cream cafe facade with dark blue awning at right, one green plane tree at left, three small distant pedestrians in casual clothes, wet pavement reflecting warm light, quiet morning. Natural unified perspective, no readable lettering. Style: Fauvist painting with bold non-naturalistic color areas, tree trunk cobalt blue, foliage vermilion and acid yellow, pavement violet and turquoise, cafe walls warm orange and pink. Broad flat assertive strokes, simplified spatial depth, expressive vivid contours and chromatic freedom. Not realistic sunlight study; no neon photorealism, no pointillist dots."
+  },
+  {
+    "id": "22-art-deco",
+    "style": "装饰艺术",
+    "prompt": "Use case: illustration-story. One independent vertical Art Deco inspired graphic illustration for a beginner art book. A stylish adult woman architect with short black bob, modest cream jacket and teal trousers, holding a rolled plan on a stepped city terrace. Strong geometric symmetrical framing, radiating sunburst, skyscrapers as tiered simplified rectangles, sharply angular ornaments and streamlined arcs, limited navy teal cream and ochre-gold matte palette. Figure stylized with elegant coherent anatomy, crisp contours, flat shapes, no botanical whiplash border, no lettering no text no watermark."
+  },
+  {
+    "id": "23-graphite",
+    "style": "石墨铅笔",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: an old fishing boat on wooden blocks in a calm harbor yard, a coiled rope in foreground lower left, a lighthouse and two small buildings beyond; overcast daylight; no people. Style: authentic graphite pencil drawing on white paper, controlled fine hatch marks and light layered crosshatching, precise structure, delicate midgray tonal range and selectively dark lines, visible tiny paper grain; emphasize fine sharp pencil precision in boat wood and rope, peripheral buildings loosely outlined. No charcoal velvety large black masses, no ink black solid fill, no color."
+  },
+  {
+    "id": "24-pen-ink",
+    "style": "钢笔线描",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: an old fishing boat on wooden blocks in a calm harbor yard, a coiled rope in foreground lower left, a lighthouse and two small buildings beyond; overcast daylight; no people. Style: black ink pen-and-ink drawing, confident clean continuous contours, fine repeated parallel hatching and crosshatching make tones, high-contrast crisp ink lines remain clearly visible, pure white unfilled sky and selective black small accents. No gray wash, no pencil smudge, no painted gradient; make line direction follow hull shape and rope twists."
+  },
+  {
+    "id": "25-etching",
+    "style": "蚀刻版画风",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: an old fishing boat on wooden blocks in a calm harbor yard, a coiled rope in foreground lower left, a lighthouse and two small buildings beyond; overcast daylight; no people. Style: an etched intaglio print visual simulation, subtle warm plate tone on ivory paper, finely bitten irregular black lines, dense delicate crosshatching in hull, rich ink in minute crevices, slight plate mark border with a calm margin, atmospheric shades built through line density and restrained plate tone. No broad white woodcut gouges, no photoreal gradients or watercolor color. Historically inspired quiet detailed print."
+  },
+  {
+    "id": "26-cut-paper",
+    "style": "剪纸层叠",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: a round orange tabby cat sitting on a windowsill at left, looking at a small potted fern on right; a large circular warm sun behind the cat visible through the window. Style: handcrafted layered cut-paper collage, solid colored cardstock with clean scissor-cut curves and slight real depth shadows at overlapping edges, six broad flat color groups coral orange teal cream navy and yellow. Cat simplified into coherent rounded paper shapes, foliage formed by individually cut leaf silhouettes. Strong graphic negative spaces, no fur rendering or paint strokes, no photoreal scene, no words."
+  },
+  {
+    "id": "27-collage",
+    "style": "拼贴",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: a round orange tabby cat sitting on a windowsill at left, looking at a small potted fern on right; a large circular warm sun behind the cat visible through the window. Style: joyful handmade mixed paper collage of torn colored papers, abstract printed patterns and textured packaging scraps, visible uneven torn fibers and glued overlapping edges. Cat body assembled from mismatched warm orange and cream paper textures, fern from different green scraps, window grid as geometric paper strips. Keep subject readable. No readable letters or words, no photo of real cat, no painted fur."
+  },
+  {
+    "id": "28-silhouette",
+    "style": "剪影",
+    "prompt": "Use case: illustration-story. One independent vertical artwork for a beginner art book, no text no watermark no panels. Scene fixed for comparison: a round orange tabby cat sitting on a windowsill at left, looking at a small potted fern on right; a large circular warm sun behind the cat visible through the window. Style: elegant pure silhouette graphic illustration. All foreground cat, windowsill, window frame and fern in solid dark navy without any internal fur, eye, or leaf shading; background flat pale peach with a single warm orange sun. Cat personality communicated solely by outer ear shapes, curved spine and tail, fern silhouette finely articulated and negative spaces carefully arranged. Exactly three main flat colors, no texture, no gradients."
+  },
+  {
+    "id": "29-pastel",
+    "style": "粉彩",
+    "prompt": "Use case: illustration-story. One independent vertical still-life painting for a beginner art book, no text no watermark no panels. Same composition for comparison: two green pears, one blue ceramic jug behind them at upper right, a rumpled ivory cloth on a wooden tabletop, plain warm gray wall, light from upper left. Style: soft pastel drawing on lightly textured gray paper, dusty granular pigment, visible gentle directional strokes and blurred softly rubbed passages, powdery matte highlights, velvety color transitions, selectively sharp pear edges, soft blue and warm peach-gray atmosphere. Not transparent watercolor, not oily brush impasto, no slick smooth digital sheen."
+  },
+  {
+    "id": "30-acrylic",
+    "style": "丙烯厚块面",
+    "prompt": "Use case: illustration-story. One independent vertical still-life painting for a beginner art book, no text no watermark no panels. Same composition for comparison: two green pears, one blue ceramic jug behind them at upper right, a rumpled ivory cloth on a wooden tabletop, plain warm gray wall, light from upper left. Style: opaque acrylic painting with bold firm brush marks, clean flat color planes at jug and pears, selectively hard crisp edges and layered matte opaque highlights, broad sculptural simplification, rich teal blue, green ochre and cream with lively purple shadows. Visible paint overlap, not transparent washes, not perfectly smooth digital 3D. Compact powerful simple still life."
+  },
+  {
+    "id": "31-tempera",
+    "style": "蛋彩启发",
+    "prompt": "Use case: illustration-story. One independent vertical still-life painting for a beginner art book, no text no watermark no panels. Same composition for comparison: two green pears, one blue ceramic jug behind them at upper right, a rumpled ivory cloth on a wooden tabletop, plain warm gray wall, light from upper left. Style: egg-tempera-inspired meticulously painted still life, many tiny fine crosshatched brush strokes and thin crisp layers, luminous matte surface, tightly bounded forms and fine contour, jewel-like restrained cool green and cobalt against pale warm ivory, minimal heavy texture and no impasto, quiet frontal clarity with fine craftsmanship. Do not claim real material; make fine brushstroke structure visible."
+  },
+  {
+    "id": "32-airbrush",
+    "style": "数字喷绘",
+    "prompt": "Use case: illustration-story. One independent vertical still-life painting for a beginner art book, no text no watermark no panels. Same composition for comparison: two green pears, one blue ceramic jug behind them at upper right, a rumpled ivory cloth on a wooden tabletop, plain warm gray wall, light from upper left. Style: polished digital airbrush illustration with smoothly blended continuous gradients and carefully masked hard outlines of jug and pears, seamless soft illumination, glossy controlled small reflections on blue ceramic, clean graphic silhouette against simple gray-beige background. No paper texture, no visible bristle strokes, no grain, no pencil hatching. Clearly painted illustration not a photograph."
+  },
+  {
+    "id": "33-ligne-claire",
+    "style": "清线漫画",
+    "prompt": "Use case: illustration-story. An independent vertical COMIC PAGE for a beginner art book, no words, no captions, no speech bubbles, no lettering. Depict three clearly separated sequential story beats in order top to bottom: 1 an adult male bicycle book courier with short dark hair, blue cap, red raincoat and canvas bag rides through light rain carrying a brown-paper wrapped book. 2 he brakes safely before a small green doorway, warm light visible. 3 a smiling elderly woman with silver hair and blue cardigan receives the dry parcel at the door while an orange cat watches at her feet. Maintain courier and recipient appearance consistently. Coherent rain setting and readable actions. Style: European ligne claire comic visual language, even-weight clean black outlines around all major forms, flat bright local colors, nearly no hatching, clear coherent environment perspective, three equal-height horizontal rectangular panels with clean thin borders and white gutters, full figures and settings readable, restrained expressions with clear action. Keep style consistent."
+  },
+  {
+    "id": "34-american-comic",
+    "style": "美式动作漫画",
+    "prompt": "Use case: illustration-story. An independent vertical COMIC PAGE for a beginner art book, no words, no captions, no speech bubbles, no lettering. Depict three clearly separated sequential story beats in order top to bottom: 1 an adult male bicycle book courier with short dark hair, blue cap, red raincoat and canvas bag rides through light rain carrying a brown-paper wrapped book. 2 he brakes safely before a small green doorway, warm light visible. 3 a smiling elderly woman with silver hair and blue cardigan receives the dry parcel at the door while an orange cat watches at her feet. Maintain courier and recipient appearance consistently. Coherent rain setting and readable actions. Style: American dramatic adventure comic visual language, varying bold brush ink contours, weighty black shadow masses, dynamic perspective and cinematic changes from wide shot to braking close-up to warm medium exchange; diagonal action emphasis, energetic rain speed marks, red navy amber palette, three horizontal sequential panels with varied framing and clear borders, anatomy coherent. Avoid superhero costume; no text."
+  },
+  {
+    "id": "35-webtoon",
+    "style": "纵向网络漫画",
+    "prompt": "Use case: illustration-story. An independent vertical COMIC PAGE for a beginner art book, no words, no captions, no speech bubbles, no lettering. Depict three clearly separated sequential story beats in order top to bottom: 1 an adult male bicycle book courier with short dark hair, blue cap, red raincoat and canvas bag rides through light rain carrying a brown-paper wrapped book. 2 he brakes safely before a small green doorway, warm light visible. 3 a smiling elderly woman with silver hair and blue cardigan receives the dry parcel at the door while an orange cat watches at her feet. Maintain courier and recipient appearance consistently. Coherent rain setting and readable actions. Style: contemporary Korean-style vertical webtoon visual language. Three distinct sequential scene frames spaced apart down a tall clean page with generous white scroll gaps; first broad establishing rain scene, second close-up of hand braking with red raincoat sleeve and bluecap courier partial view, third medium warm doorway exchange. Delicate thin linework, gentle digital gradient shading and atmospheric light, more breathing room between final beats, consistent appealing adult characters. No typography no speech bubbles."
+  }
+]
