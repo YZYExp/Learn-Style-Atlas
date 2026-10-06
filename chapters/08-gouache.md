@@ -6,7 +6,13 @@
 
 *图 07：模拟 gouache 的哑光覆盖与块面笔触；成图比预设更偏写实。*
 
-**类型：媒介效果。**Gouache 常译不透明水彩或水粉。现实材料的覆盖力、干湿变化与具体颜料有关，不能只凭生成图断定。透明与不透明水彩的关联可参见 [S8](../editorial/SOURCES.md)。
+**类型：媒介效果。**Gouache 常译不透明水彩或水粉。现实材料的覆盖力、干湿变化与具体颜料有关，不能只凭生成图断定。透明与不透明水彩的关联可参见 [S8](https://www.vam.ac.uk/articles/what-is-watercolour)。
+
+## 来源与发展
+
+Gouache 与不透明水彩、bodycolour 的实践有关；透明与不透明方法在真实水彩历史中并非绝对隔开。[S8](https://www.vam.ac.uk/articles/what-is-watercolour)
+
+它也进入动画生产：V&A 对《French Windows》的介绍记录了 gouache 与透明片叠放的使用。由此能看到，同一种材料可以服务于画面、设计和连续影像；“粉感”只是可能外观之一。[S25](https://www.vam.ac.uk/articles/french-windows-the-psychedelic-music-video-for-pink-floyds-one-of-these-days)
 
 ## 从树叶开始看
 

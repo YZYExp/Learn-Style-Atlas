@@ -6,7 +6,13 @@
 
 *图 18：模拟较概括的花鸟笔墨语言，眼、喙与爪保留识别细节。*
 
-**类型：绘画方法与笔墨语言。**写意在这里强调取舍、笔势与概括，不意味着随便画，更不意味着只能画得粗。背景资料见 [S10](../editorial/SOURCES.md)。
+**类型：绘画方法与笔墨语言。**写意在这里强调取舍、笔势与概括，不意味着随便画，更不意味着只能画得粗。背景资料见 [S10](https://www.metmuseum.org/exhibitions/listings/2015/masterpieces-of-chinese-painting)。
+
+## 来源与发展
+
+写意应放在更广的笔墨与表达传统中理解。The Met 对文人绘画的说明强调书法性笔线与个人表达，而不是把所有简略画法归给某一个创始人。[S29](https://www.metmuseum.org/essays/chinese-painting)[S30](https://www.metmuseum.org/essays/chinese-calligraphy)
+
+它并不是工笔之后出现的简单升级。两种方法会在不同作者与题材里交叉；本书让两只麻雀并置，是为了比较信息怎样压缩，而非建立一条“越少笔越先进”的历史线。
 
 ## 看哪些信息被留下
 

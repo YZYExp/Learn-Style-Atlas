@@ -6,7 +6,13 @@
 
 *图 15：模拟黑白凸版木刻的刀痕与二值对比。*
 
-**类型：版画工艺的视觉借鉴。**真实凸版中，保留下来的凸起表面承接油墨，刻去的部分通常不印出；这里是生成的外观模拟。木版原理可参见 [S1](../editorial/SOURCES.md)。
+**类型：版画工艺的视觉借鉴。**真实凸版中，保留下来的凸起表面承接油墨，刻去的部分通常不印出；这里是生成的外观模拟。木版原理可参见 [S1](https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style)。
+
+## 来源与发展
+
+木刻是凸版工艺：被保留的表面承墨，被切去的地方通常不印。The Met 以历史作品与操作示意介绍这套工艺，说明刀的取舍怎样成为线与面。[S39](https://www.metmuseum.org/perspectives/materials-and-techniques-printmaking-woodcut)
+
+在浮世绘中，它可以参与多色城市图像；在 MoMA 的表现主义图例里，也能承载强烈主观经验。材料没有固定情绪，本书守灯人的黑白力量只是具体选择。[S1](https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style)[S3](https://www.moma.org/collection/terms/expressionism)
 
 ## 把白线当成动作
 

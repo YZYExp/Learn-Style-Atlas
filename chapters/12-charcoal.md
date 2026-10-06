@@ -6,7 +6,13 @@
 
 *图 11：高度写实的炭笔风生成图，黑灰层次和粉状纹理明显。*
 
-**类型：媒介效果。**炭笔的入门观察重点是明度：从白到黑的亮暗层次。它不只是“把彩色图转为灰色”。工艺旁读见 [S9](../editorial/SOURCES.md)。
+**类型：媒介效果。**炭笔的入门观察重点是明度：从白到黑的亮暗层次。它不只是“把彩色图转为灰色”。工艺旁读见 [S9](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-charcoal)。
+
+## 来源与发展
+
+The Met 的材料专题指出，十八世纪后期人工制作的炭条扩大了可用灰度，十九世纪炭笔也被用于高度完成的独立绘画。材料发展让它既适合构思，也适合细致经营光影。[S9](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-charcoal)
+
+这里没有给炭笔硬编一个现代流派起源。它的发展可以从功能看：既服务于构思和研究，也能成为独立完成的图像。本书的修车师傅图强调光与表情，不能代表全部炭笔实践。
 
 ## 从窗边到脸，再到围裙
 

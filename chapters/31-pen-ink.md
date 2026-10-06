@@ -6,9 +6,15 @@
 
 *AI 生成教学示意；真实材料与工艺以作品记录为准。*
 
+## 来源与发展
+
+羽管笔、芦苇笔、钢笔尖与毛笔等都能用于墨；The Met 的材料专题说明不同工具与墨浓淡会产生线和调子。[S15](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-ink)
+
+所以墨线的发展不等同于轮廓越来越细。工具可以改变痕迹范围，作者再决定怎样使用它。本书船体的交叉排线是一个方向，不能排除历史与当代的墨洗、宽线和自由笔痕。
+
 ## 这个名字放在哪个抽屉
 
-媒介与画法方向。这里选钢笔式墨线、排线与交叉排线。墨水也可以用毛笔、洗染和其他方式处理，不能把墨画全部等同于细线。见 [S15](../editorial/SOURCES.md)。
+媒介与画法方向。这里选钢笔式墨线、排线与交叉排线。墨水也可以用毛笔、洗染和其他方式处理，不能把墨画全部等同于细线。见 [S15](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-ink)。
 
 ## 先看见三个具体线索
 

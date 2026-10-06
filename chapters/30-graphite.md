@@ -6,9 +6,15 @@
 
 *AI 生成教学示意；真实材料与工艺以作品记录为准。*
 
+## 来源与发展
+
+The Met 记载石墨在欧洲十六世纪已有绘画使用，十八世纪后期更普遍；铅笔工具的制造变化也影响了调子和线的控制。[S14](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-graphite)
+
+本书只取其中的观察性素描方向。由草图到独立作品不是必须的等级阶梯；同样的材料可以画很松，也可以画很细。港口示意中的精工灰面是一种选择。
+
 ## 这个名字放在哪个抽屉
 
-媒介方向。石墨可以留下不同深浅的线和灰面；本章选择偏细致的观察性素描，不代表所有铅笔画都这样。真实石墨的工具与材料说明见 [S14](../editorial/SOURCES.md)。
+媒介方向。石墨可以留下不同深浅的线和灰面；本章选择偏细致的观察性素描，不代表所有铅笔画都这样。真实石墨的工具与材料说明见 [S14](https://www.metmuseum.org/perspectives/materials-and-techniques-drawing-graphite)。
 
 ## 先看见三个具体线索
 

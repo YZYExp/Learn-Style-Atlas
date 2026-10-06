@@ -6,7 +6,13 @@
 
 *图 16：Riso 风教学示意，表现了限色倾向与颗粒；没有严格兑现三色分版。*
 
-**类型：印刷工艺启发的视觉语言。**RISOGRAPH 是结合传统孔版原理与数字技术的印刷设备体系；“Riso 风”在这里指对其某些印刷外观的借鉴。来源见 [S6](../editorial/SOURCES.md)。
+**类型：印刷工艺启发的视觉语言。**RISOGRAPH 是结合传统孔版原理与数字技术的印刷设备体系；“Riso 风”在这里指对其某些印刷外观的借鉴。来源见 [S6](https://www.riso.co.jp/english/company/risoart/concept.html)。
+
+## 来源与发展
+
+RISO 官方把 RISO ART 放在孔版原理与数字技术结合的语境中：可复制的印刷流程也能成为艺术图像的生产方式。[S6](https://www.riso.co.jp/english/company/risoart/concept.html)
+
+从工具名到外观标签，讨论重点容易转到颗粒、叠色和局部错位。新增交换图书示意用更集中的蓝与珊瑚色练习这种语言；但真实分色、纸与油墨记录仍不能被模拟纹理代替。
 
 ## 先把颜色分成几组
 
