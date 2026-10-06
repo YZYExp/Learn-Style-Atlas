@@ -1,9 +1,10 @@
 {
   "title": "看懂画风：一场有趣的插画旅行",
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-10-06",
   "style_chapters": 35,
-  "manuscript_units": 51,
+  "manuscript_units": 53,
   "comparison_groups": 14,
-  "illustration_uses": 69
+  "illustration_uses": 77,
+  "unique_illustrations": 43
 }

@@ -1,0 +1,42 @@
+[
+  [
+    "36-starry-harbor",
+    "名画转译：旋涡笔触",
+    "Use case: illustration-story. Create one independent square illustration for an art-style teaching book. An original quiet harbor village at night, a small lighthouse, two fishing boats, tall cypress at the edge, large stars. Inspired by the directional, rhythmic oil brushwork and blue/yellow contrast of Vincent van Gogh's 1889 The Starry Night, but make a different harbor composition, not a reproduction. Every area should have purposeful visible strokes: sky follows broad spiral currents, water follows horizontal reflection strokes, buildings short planar strokes. Avoid photographic realism or random texture overlay. No writing, signature, watermark, collage panels."
+  ],
+  [
+    "37-wave-river",
+    "名画转译：波与小景",
+    "Use case: illustration-story. One independent square ukiyo-e woodblock-inspired illustration for an educational book. Original scene: a powerful river wave curves over a tiny red ferry carrying three adult commuters, distant low green hills with no Mount Fuji, cream open sky. Borrow the large sweeping wave / small vulnerable human scale relationship from Hokusai's Great Wave, but do not reproduce its layout. Strong elegant ink outlines, flattened limited indigo teal cream red areas, stylized foam claws, subtle paper impression only. No photographic water, no text, no signature or panels."
+  ],
+  [
+    "38-point-park",
+    "名画转译：点色人物",
+    "Use case: illustration-story. One independent square pointillist teaching illustration: original public park beside a lake, three adult walkers and a large red umbrella, a small dog, afternoon trees. Related to Seurat's late nineteenth-century pointillist method, but an original scene rather than reproducing La Grande Jatte. Build forms from individually visible small colored dots; different nearby dots compose light, shadow and local hue; minimal continuous contours, no uniform noise over smooth base image, no photographic faces, no lettering or signature."
+  ],
+  [
+    "39-blue-paper",
+    "名画转译：剪形与负形",
+    "Use case: illustration-story. One independent square cut-paper-inspired teaching illustration. An original arrangement of three cobalt-blue paper swimmers with simplified limbs and abstract ochre leaf forms on warm ivory. Inspired by the compositional method of Henri Matisse's late cut-outs, not a copy of any known work. Clearly cut irregular smooth edges, flat opaque colored paper, balanced gaps and overlaps, highly simplified yet readable bodily silhouettes. No internal anatomical rendering, no gradients, no shadows suggesting 3D, no typography, signature or panels."
+  ],
+  [
+    "40-cel-courier",
+    "流行方向：动画平涂",
+    "Use case: illustration-story. One independent square original animation-style illustration: cheerful adult woman bicycle courier with short auburn hair, green helmet and orange jacket stands beside a blue bicycle at a small neighborhood bakery on a bright morning. Crisp varied outlines, flat local colors and precisely limited two-level hard-edged cel shadows, no blended skin or photographic textures; flat shapes in the environment too. Readable silhouette and clear focal hierarchy. No existing franchise, logos, text, watermark or panels."
+  ],
+  [
+    "41-pixel-market",
+    "流行方向：像素场景",
+    "Use case: illustration-story. One independent square pixel-art illustration of an original cozy fantasy town market at dusk: adult shopkeeper, fruit stalls, cat, tiled roofs, lantern. Entire image visibly built on one consistent low-resolution square grid, intentional pixel clusters, stair-step diagonals, limited 16-color palette, absolutely no smooth brushwork, gradients, non-grid detail or antialiasing. A complete independent scene, not a sprite sheet, no text, watermark or existing franchise characters."
+  ],
+  [
+    "42-webtoon-bus",
+    "流行方向：纵向停顿",
+    "Use case: illustration-story. One independent tall original full-color vertical webcomic page, exactly three clearly separated panels with generous clean white gutters. A simple story with one consistent adult woman in yellow coat and green scarf: top panel she waits at rainy bus stop; middle close-up she notices a small lost kitten under the bench; bottom panel she shelters kitten beneath her umbrella, smiling. Clean economical outlines, simple flat cel-color characters, restrained soft atmosphere only in background. First panel wide, middle smaller and inset, last larger emotional payoff. No speech balloons, text, existing franchise, signature or watermark."
+  ],
+  [
+    "43-riso-library",
+    "流行方向：限色海报",
+    "Use case: illustration-story. One independent square risograph-inspired illustration for an educational book: original friendly neighborhood outdoor book swap, two adults with visibly different ages exchange a blue book above a low table with stacked books and two plant pots. Use ONLY dark indigo and fluorescent coral ink over ivory paper, overprint creates a third violet mix; coarse ink grain, clear flat shapes, subtle localized misregistration and generous blank space. No realistic shading, no extra ink colors, no typography, labels, signature or panels."
+  ]
+]
