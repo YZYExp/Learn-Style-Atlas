@@ -1,0 +1,76 @@
+name: Publish tagged book
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+concurrency:
+  group: book-release
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0
+      - run: python -m pip install -r scripts/pdf-requirements.txt
+      - run: python scripts/build.py --html && python scripts/check.py --html
+      - run: python scripts/build_pdf.py
+      - run: python scripts/check_pdf.py
+      - name: Prepare Pages downloads
+        run: |
+          mkdir -p build/site/downloads
+          cp build/index.html build/site/index.html
+          cp build/pdf/style-atlas.pdf build/pdf/style-atlas-chapters.zip build/site/downloads/
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('build/site/index.html')
+          s = p.read_text()
+          p.write_text(s.replace('<main>', '<main><p><a href="downloads/style-atlas.pdf">下载全书 PDF</a> · <a href="downloads/style-atlas-chapters.zip">下载分章 PDF</a></p>', 1))
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: book-pdfs
+          path: |
+            build/pdf/style-atlas.pdf
+            build/pdf/style-atlas-chapters.zip
+          if-no-files-found: error
+  release:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: book-pdfs
+          path: pdf
+      - name: Publish PDF release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --verify-tag --title "$RELEASE_TAG" --generate-notes
+          fi
+          gh release upload "$RELEASE_TAG" pdf/* --clobber
+  pages:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
