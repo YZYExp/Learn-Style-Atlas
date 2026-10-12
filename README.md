@@ -68,7 +68,15 @@ python3 scripts/package.py --output ../style-atlas-sourcebook.zip
 
 推送 `v*` 标签触发 `.github/workflows/release.yml`：检查书稿、生成网页与 PDF，再部署 GitHub Pages，并将全书 PDF 和分章 PDF ZIP 上传到同名 GitHub Release。普通分支提交不触发发布；重复运行同一标签会更新附件。发布任务排队执行，避免部署并发覆盖。
 
-首次使用须在仓库 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。若 `github-pages` 环境限制部署分支，应允许 `v*` 标签。工作流使用仓库自带 `GITHUB_TOKEN`，无需额外密钥。
+首次使用须在仓库 [Settings → Pages](https://github.com/YZYExp/Learn-Style-Atlas/settings/pages) → Build and deployment 中选择 **GitHub Actions**。还须在 [Settings → Environments](https://github.com/YZYExp/Learn-Style-Atlas/settings/environments) → `github-pages` → Deployment branches and tags 中允许发布标签：
+
+1. 若当前为 **Protected branches only**，改为 **Selected branches and tags**，并保留所需的既有分支规则。
+2. 添加部署规则，类型选择 **Tag**，名称模式填 `v*`。Branch 类型的 `v*` 规则不会允许同名标签部署；`main` 分支规则也不会允许来自 `v1.2` 标签的工作流。
+3. 保存规则。工作流使用仓库自带 `GITHUB_TOKEN`，无需额外密钥。环境规则需要仓库管理员配置，不能靠修改工作流中的 `permissions` 解决。
+
+如果 `pages` 任务没有启动 runner、没有步骤日志，且 Annotations 显示 `Tag "v1.2" is not allowed to deploy to github-pages due to environment protection rules.`，应按上述步骤修正环境规则。构建、Release 和 Pages 上传已成功时，可在原 Actions 运行中选择 **Re-run failed jobs**，仅重试部署，无需重建 PDF，也无需创建新标签。Pages 产物保留一天；若重试时产物已过期，则需重新构建上传。
+
+环境配置规则见 [GitHub 官方说明](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments#deployment-branches-and-tags)。
 
 ```bash
 git tag v1.2.0
