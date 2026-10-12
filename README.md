@@ -80,10 +80,14 @@ git push origin v1.2.0
 本地生成 PDF（Python 3.12；Linux 另需 Pango 和 Noto CJK 字体）：
 
 ```bash
-sudo apt-get install fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0
+sudo apt-get install fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0
 python3 -m pip install -r scripts/pdf-requirements.txt
 python3 scripts/build_pdf.py
 python3 scripts/check_pdf.py
 ```
 
 输出为 `build/pdf/style-atlas.pdf`、各章及资料附录 PDF、`build/pdf/style-atlas-chapters.zip`。章节从新页开始，来源编号在正文位置对应页脚资料，PDF 保留点击链接。PDF 输出不进入 Git。
+
+`libharfbuzz-subset0` 为大型中文字体提供原生裁剪；缺少它时，WeasyPrint 会回退到较慢的 Python 字体处理。CI 会检查原生裁剪是否可用。构建复用相同来源页脚，并逐个输出 PDF 的页数与耗时。
+
+修复发布脚本后，应从包含修复的提交创建新标签。重新运行旧标签的 Actions 仍使用旧提交中的脚本与工作流。
