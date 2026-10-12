@@ -4,10 +4,12 @@ import html
 import json
 import re
 import zipfile
+from time import perf_counter
 from io import BytesIO
 from pypdf import PdfReader, PdfWriter
 from build import ROOT, OUT, LINK, chapter_paths, markdown, inline
 from weasyprint import HTML
+from weasyprint.text.fonts import FontConfiguration
 
 CSS = '''
 @page { size: A4; margin: 18mm 16mm 45mm;
@@ -24,6 +26,9 @@ table img { max-height: 65mm; } tr { break-inside: avoid; }
 
 
 def main():
+    started = perf_counter()
+    font_config = FontConfiguration()
+    footer_cache = {}
     config = json.loads((ROOT / 'book.json').read_text())
     sources = {}
     for line in (ROOT / 'editorial/SOURCES.md').read_text().splitlines():
@@ -32,12 +37,14 @@ def main():
             sources[cells[0].strip()] = cells[1].strip()
     source_urls = json.loads((ROOT / 'editorial/source-index.json').read_text())
     def write_pdf(content, target, include_sources=True):
-        raw = HTML(string=content, base_url=str(ROOT)).write_pdf()
+        step_started = perf_counter()
+        print(f'Building {target.name} ...', flush=True)
+        raw = HTML(string=content, base_url=str(ROOT)).write_pdf(font_config=font_config)
         reader = PdfReader(BytesIO(raw))
         writer = PdfWriter()
         appendix = False
         for page in reader.pages:
-            if ''.join(page.extract_text().split()).startswith('资料与进一步阅读'):
+            if include_sources and not appendix and ''.join(page.extract_text().split()).startswith('资料与进一步阅读'):
                 appendix = True
             urls = set()
             for ref in page.get('/Annots', []):
@@ -46,13 +53,16 @@ def main():
                     urls.add(str(action['/URI']))
             notes = [sid + ': ' + sources[sid] for sid, url in source_urls.items() if url in urls]
             if notes and include_sources and not appendix:
-                footer = '<html><meta charset="utf-8"><style>@page {size:A4;margin:0} body{margin:0;font:6pt/1.3 "Noto Sans CJK SC"} div{position:absolute;left:16mm;right:16mm;bottom:13mm;max-height:30mm;border-top:.5pt solid #bbb;padding-top:2mm;overflow-wrap:anywhere} p{margin:0}</style><div>' + ''.join('<p>' + inline(note) + '</p>' for note in notes) + '</div></html>'
-                overlay = PdfReader(BytesIO(HTML(string=footer).write_pdf()))
-                page.merge_page(overlay.pages[0])
+                key = tuple(notes)
+                if key not in footer_cache:
+                    footer = '<html><meta charset="utf-8"><style>@page {size:A4;margin:0} body{margin:0;font:6pt/1.3 "Noto Sans CJK SC"} div{position:absolute;left:16mm;right:16mm;bottom:13mm;max-height:30mm;border-top:.5pt solid #bbb;padding-top:2mm;overflow-wrap:anywhere} p{margin:0}</style><div>' + ''.join('<p>' + inline(note) + '</p>' for note in notes) + '</div></html>'
+                    footer_cache[key] = PdfReader(BytesIO(HTML(string=footer).write_pdf(font_config=font_config)))
+                page.merge_page(footer_cache[key].pages[0])
         writer.append(reader)
         writer.add_metadata({'/Title': config['title'], '/Author': config['credit'], '/Subject': config['ai_notice']})
         with open(target, 'wb') as output:
             writer.write(output)
+        print(f'Built {target.name}: {len(reader.pages)} pages in {perf_counter() - step_started:.1f}s', flush=True)
     dest = OUT / 'pdf'
     dest.mkdir(parents=True, exist_ok=True)
     sections = []
@@ -80,7 +90,8 @@ def main():
         for pdf in sorted(dest.glob('*.pdf')):
             if pdf.name != 'style-atlas.pdf':
                 archive.write(pdf, pdf.name)
-    print(f'Built full book and {len(sections)} independent units in {dest}')
+    print(f'Built full book and {len(sections)} independent units in {dest}; '
+          f'{len(footer_cache)} unique source footers; {perf_counter() - started:.1f}s total', flush=True)
 
 if __name__ == '__main__':
     main()
