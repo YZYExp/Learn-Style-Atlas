@@ -94,6 +94,8 @@ def main():
     paths = chapter_paths()
     anchors = {p.resolve(): 'section-' + p.stem for p in paths}
     merged = ['# 看懂画风：一场有趣的插画旅行\n\n修订版 · v1.1 · 2026-10-06\n\n所有插图均为 AI 生成教学示意。\n']
+    merged[0] = merged[0].replace('v1.1', 'v' + config['version']).replace('2026-10-06', config['date'])
+    merged[0] += config['credit'] + '\n\n' + config['ai_notice'] + '\n'
     merged.append('## 全书目录\n\n' + '\n'.join(f'- [{p.read_text().splitlines()[0].removeprefix("# ")}](#{anchors[p.resolve()]})' for p in paths) + '\n')
     sections = []
     toc = []
@@ -137,8 +139,11 @@ def main():
         page = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>看懂画风 · 全书终稿</title><style>' + css + '</style></head><body id="top">'
         page += '<aside><div class="label">ILLUSTRATION FIELD TRIP</div><div class="brand">看懂画风</div><p class="label">修订版 · 35 个方向 · v1.1</p><button id="theme">切换明暗</button><p><input id="find" type="search" placeholder="查目录：如水彩、漫画、比较" aria-label="筛选目录"></p><nav aria-label="书籍目录">' + ''.join(toc) + '</nav></aside>'
         page += '<main><header><span class="label">一场有趣的插画旅行</span><h1>先看图，<br>再学名字。</h1><p>写给喜欢看图、想说清楚自己喜欢什么的人。跟着不同角色旅行，用具体线索认识画风，用小实验发现区别。</p><span class="pill">43 张独立插图</span><span class="pill">14 组对照</span><span class="pill">53 个正文单元</span><p>2026-10-06 · 所有插图均为 AI 生成教学示意。点击图片可放大。</p></header>'
+        page += '<p>' + html.escape(config['credit']) + '</p><p>' + html.escape(config['ai_notice']) + '</p>'
         page += ''.join(sections) + '</main><dialog id="zoom"><button id="close">关闭 ×</button><img alt="插图放大"></dialog>'
         page += '''<script>document.querySelector('#find').addEventListener('input',e=>document.querySelectorAll('nav a').forEach(a=>a.hidden=!a.textContent.includes(e.target.value)));const zoom=document.querySelector('#zoom');document.querySelector('#theme').onclick=()=>document.body.classList.toggle('dark');document.querySelectorAll('main img').forEach(i=>i.addEventListener('click',()=>{const z=zoom.querySelector('img');z.src=i.src;z.alt=i.alt;zoom.showModal()}));document.querySelector('#close').onclick=()=>zoom.close();zoom.addEventListener('click',e=>{if(e.target===zoom||e.target.tagName==='IMG')zoom.close()});</script></body></html>'''
+    if args.html:
+        page = page.replace('v1.1', 'v' + config['version']).replace('2026-10-06', config['date'])
     (OUT / 'book.md').write_text('\n'.join(merged))
     if args.html:
         (OUT / 'index.html').write_text(page)
